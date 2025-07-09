@@ -1,35 +1,84 @@
-# 🔮 Psychic Engine (React)
+# 🔮 Psychic Engine (Full Stack: React + Java + MongoDB)
 
-Welcome to **Psychic Engine**, an advanced modular AI dashboard system built with **React**. This project is designed to simulate a powerful multi-AI management interface—capable of handling UI/UX design systems, backend monitoring, real-time analytics, and threat detection insights.
+Welcome to **Psychic Engine**, an advanced modular AI dashboard system built using **React (frontend)** and **Java (backend)**. The app simulates a powerful AI-driven multi-dashboard system with real-time visualizations, analytics, and security monitoring.
+
+---
+
+## 🌐 Live Tech Stack
+
+- ⚛️ **Frontend**: React (Vite), Context API, CSS Modules
+- ☕ **Backend**: Java Servlet-based API
+- 🛢️ **Database**: MongoDB (via MongoDB Java Driver)
+- 🔐 **Security**: Password hashing with BCrypt
+
+---
 
 ## 📁 Features
 
-- 🧠 **Multiple Sub-AIs**:
-  - UI/UX AI
-  - Backend AI
-  - Data Analyst AI
-  - Security Monitor
+### 🧠 Modular Sub-AIs:
+- UI/UX AI
+- Backend AI
+- Data Analyst AI
+- Security Monitor AI
 
-- 📊 **Dashboards with Real-Time Visualizations**:
-  - Line graphs, radar charts, log charts, and weight trackers.
-  - Smart threat alerts and live system suggestions.
+### 📊 Dashboards with Real-Time Visualizations:
+- Line graphs, radar charts, log charts, and weight tracking
+- Smart system suggestions, warnings, and threat alerts
 
-- 🔐 **User Authentication**:
-  - Login / Signup screens with secure form handling and validation.
+### 👤 Authentication:
+- Signup & Login (frontend + backend integration)
+- Secure password storage using `BCrypt`
 
-- 🧩 **Modular Design**:
-  - Reusable components and CSS Modules.
-  - Centralized state management using React Context.
+### 📦 Architecture:
+- Component-based modular frontend
+- Centralized state with Context API
+- Java Servlet backend with JSON API endpoints
+
+---
 
 ## 🧱 Project Structure
 
-src/
-├── App.jsx, main.jsx
-├── assets/ # Images and SVGs
-├── components/
-│ ├── Login, Signup, Header
-│ ├── ComDashboard, UiUxAIDashboard, RealTimecom
-│ ├── Analysis/, DashBoardWighets/, UiUixSbAI's/
-│ └── Sidebar/
-├── store/ # Context and State Management
+📁 psychic-engine-React/
+│
+├── 📁 src/ (Frontend)
+│ ├── App.jsx, main.jsx
+│ ├── assets/ # Icons, logos, images
+│ ├── components/
+│ │ ├── ComDashboard, UiUxAIDashboard, RealTimecom
+│ │ ├── Login, Signup, Header
+│ │ ├── Analysis/, DashBoardWighets/, UiUixSbAI's/
+│ │ └── Sidebar/
+│ └── store/ # Context API and store setup
+│
+└── 📁 ReactServer/ (Backend)
+├── src/main/java/com/ifham/Server/
+│ ├── Login.java
+│ ├── Signup.java
+│ └── PasswordUtil.java (BCrypt helper)
+├── src/main/webapp/WEB-INF/
+│ ├── web.xml
+│ └── lib/ (MongoDB driver, JSON, BCrypt jars)
+└── build/ (Compiled classes)
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Frontend Setup (React)
+
+```bash
+# Clone the repository
+git clone https://github.com/ifo-aka/psychic-engine-React.git
+cd psychic-engine-React
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+API endPoints 
+POST /signup
+POST /login
+Payloads expected in JSON format. Passwords are securely hashed using BCrypt.
 
