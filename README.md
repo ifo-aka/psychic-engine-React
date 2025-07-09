@@ -81,4 +81,7 @@ API endPoints
 POST /signup
 POST /login
 Payloads expected in JSON format. Passwords are securely hashed using BCrypt.
+// licence
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
