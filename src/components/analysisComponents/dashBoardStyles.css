@@ -1,0 +1,192 @@
+.data{
+     border: 2px solid aqua;
+  
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+
+    
+}
+
+
+.RealTimeLogs{
+    border-radius: 10px;
+    
+    border: 2px solid aqua;
+
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.warnings{
+    border-radius: 10px;
+    
+    border: 2px solid aqua;
+    
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+        
+
+}
+.systemOverview{
+    border-radius: 10px;
+    
+       border: 2px solid aqua;
+  
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.statistics{
+    border-radius: 10px;
+    
+    border: 2px solid aqua;
+ 
+    width: 30%;
+   
+    display: flex;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.suggestions{
+    border-radius: 10px;
+    border: 2px solid aqua;
+   
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+.box{
+  height: 350px;
+}
+.circle-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .circle-half {
+   position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    clip-path: inset(0 0 0 70%); /* Clip right half */
+    margin-top: 20px;
+    
+   
+  
+  }
+
+  .circle-half.right {
+    clip-path: inset(0% 0 0% 40%); /* Clip right half */
+    left: 0;
+    
+  }
+
+  .circle-half.left {
+    clip-path: inset(0% 40% 0% 0%); /* Clip left half */
+    left: 0;
+  }
+
+  .circle-half.left {
+   border: 10px solid red;
+  }
+
+  .circle-half.right {
+    border: 10px solid blue;
+   
+  }
+.logos{
+  margin-top: 80px
+}
+.logos .good{
+
+  display: flex;
+  justify-content: space-around;
+  
+  width: 100px;
+  align-items: center;
+}
+.logos .good .goodcolorlogo{
+  height: 15px;
+  width: 30px;
+  background-color: blue;
+}
+.logos .Bad{
+
+  display: flex;
+  justify-content: space-around;
+  
+  width: 100px;
+  align-items: center;
+}
+.logos .Bad .Badcolorlogo{
+  height: 15px;
+  width: 30px;
+  background-color: red;
+}
+.data:hover,
+.RealTimeLogs:hover,
+.warnings:hover,
+.systemOverview:hover,
+.statistics:hover,
+.suggestions:hover {
+      box-shadow: 0 0 30px rgba(127, 127, 223, 0.6);
+    transition: 0.5s;
+    scale: 0.95;
+}
+
+
+.dashs {
+  background-color: #02b2d4;
+  margin: 5px;
+  width: 40%;
+  border-radius: 10px;
+  max-height: 60px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes fillin {
+  0%{
+     background: linear-gradient(to right, rgb(255,255,255) 0% , transparent 0%);
+ 
+  }
+  100%{
+     background: linear-gradient(to right, rgb(255,255,255) 10% , transparent 0%);
+ 
+  }
+  
+}
+@media  screen and (max-width : 750px ) {
+  .box{
+    width: 90%;
+    height: 350px;
+  }
+  .data:hover,
+.RealTimeLogs:hover,
+.warnings:hover,
+.systemOverview:hover,
+.statistics:hover,
+.suggestions:hover {
+    
+    scale: none;
+}
+
+}

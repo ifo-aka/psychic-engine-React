@@ -1,0 +1,99 @@
+
+.sidebarandMain{
+    
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   
+}
+.main{
+   
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   
+   
+}
+.headerAndthreeDot{
+  
+    width: 100%;
+    display: flex;
+    background-color: #02b2d4;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.threeDotcont{
+   
+    display: flex;
+    width: 50px;
+    height: fit-content;
+    margin-left: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.dots{
+    background-color:#101212;
+    padding-bottom: 15px;
+    width: 60px;
+    color:#02b2d4;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: px;
+    border: 2px solid #02b2d4;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+}
+.dots:hover{
+    background-color: #02b2d4;
+    color: black;
+}
+.currentUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #02b2d4;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #101212;
+    min-width: 50px;
+    width:3%;
+    height: 6vh;
+    border-radius: 100%;
+    margin-left: 60px;
+
+}
+.loginOrSignup{
+   
+    width: 10%;
+    height: 50%;
+    display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+}
+.signup{
+    list-style: none;
+}
+.link{
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    width: 40%;
+    min-width: 60px;
+    text-align: center;
+    height: 100%;
+    align-content: center;
+    color: #02b2d4;
+    border-radius: 10px;
+    font-size: clamp(1em,min(10px),0.5em);
+    margin: 0px 10px;
+}

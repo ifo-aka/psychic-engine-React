@@ -1,0 +1,49 @@
+.SignupCont{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+    /* background-color: red; */
+}
+.signup{
+    height: 70vh;
+    width: 80%;
+    background-color: rgb(4, 187, 223);
+    opacity: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cont{
+    display: block;
+    width: 90%;
+
+}
+.contElement{
+    width: 97%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.705);
+    color: black;
+}
+.btnele{
+   background-color:  rgb(4, 187, 223) ;
+    border: 3px solid  black;
+    
+}
+.btnele:hover{
+    background-color: black;
+    color: white;
+}
+.btnred{
+    border: 2px solid red;
+}
+.redlab{
+    border: 2px solid red;
+}

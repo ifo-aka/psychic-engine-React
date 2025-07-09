@@ -1,0 +1,21 @@
+.StructureAi{
+   
+    height: 70vh;
+    width: 100%;
+    background-color: blue;
+   
+}
+
+.mainofUIUXSUB{
+    margin: 10px 0px 0px 20px;
+   padding: 40px;
+    height: 87vh;
+
+    font-size: 2rem;
+    width: 97%;
+    border-radius:10px;
+    border: 2px solid aqua;
+    overflow: auto;
+    color: white;
+
+}
